@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class InsertionSort {
 
-     public static int[] insertionSort1(int[] array) {
+     public static void insertionSort1(int[] array) {
 
           for (int i = 1; i < array.length; i++) {
 
@@ -32,7 +32,6 @@ public class InsertionSort {
 
           }
 
-          return array;
      }
 
      public static void main(String[] args) {
@@ -40,8 +39,9 @@ public class InsertionSort {
           InsertionSort obj = new InsertionSort();
 
           int[] arg1 = { 12, 11, 13, 5, 6 };
+          insertionSort1(arg1);
 
-          System.out.println(Arrays.toString(insertionSort1(arg1)));
+          System.out.println(Arrays.toString(arg1));
 
      }
 }

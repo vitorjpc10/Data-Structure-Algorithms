@@ -1,0 +1,63 @@
+{
+     // Use IntelliSense to learn about possible attributes.
+     // Hover to view descriptions of existing attributes.
+     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+     "version": "0.2.0",
+     "configurations": [
+          {
+               "type": "java",
+               "name": "Launch Current File",
+               "request": "launch",
+               "mainClass": "${file}"
+          },
+          {
+               "type": "java",
+               "name": "Launch HashMapTest",
+               "request": "launch",
+               "mainClass": "HashMapTest",
+               "projectName": "Personal_Study_145ded88"
+          },
+          {
+               "type": "java",
+               "name": "Launch MathRandom",
+               "request": "launch",
+               "mainClass": "MathRandom",
+               "projectName": "Personal_Study_145ded88"
+          },
+          {
+               "type": "java",
+               "name": "Launch BubbleSort",
+               "request": "launch",
+               "mainClass": "SortingAlgorithms.BubbleSort",
+               "projectName": "Personal_Study_145ded88"
+          },
+          {
+               "type": "java",
+               "name": "Launch InsertionSort",
+               "request": "launch",
+               "mainClass": "SortingAlgorithms.InsertionSort",
+               "projectName": "Personal_Study_145ded88"
+          },
+          {
+               "type": "java",
+               "name": "Launch SelectionSort",
+               "request": "launch",
+               "mainClass": "SortingAlgorithms.SelectionSort",
+               "projectName": "Personal_Study_145ded88"
+          },
+          {
+               "type": "java",
+               "name": "Launch StackImp",
+               "request": "launch",
+               "mainClass": "StackImp",
+               "projectName": "Personal_Study_145ded88"
+          },
+          {
+               "type": "java",
+               "name": "Launch WalmartCodeTest1",
+               "request": "launch",
+               "mainClass": "WalmartCodeTest1",
+               "projectName": "Personal_Study_145ded88"
+          }
+     ]
+}

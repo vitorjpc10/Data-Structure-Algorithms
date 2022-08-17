@@ -10,8 +10,6 @@ public class MathRandom {
 
                // generates numbers from 1 to 11
                array[i] = (int) (Math.random() * 11) + 1;
-               // array[i] = Random.nextInt(11);
-
           }
 
           System.out.println(Arrays.toString(array));
