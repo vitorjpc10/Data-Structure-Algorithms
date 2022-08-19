@@ -33,12 +33,14 @@ public class GroupAnagrams {
 
                map.get(key).add(word);
 
+               
+
           }
 
-          //! all of this can be achieved with the below return statement
+          // ! all of this can be achieved with the below return statement
           // for (Map.Entry<String, List<String>> entry : map.entrySet()) {
 
-          //      result.add(entry.getValue());
+          // result.add(entry.getValue());
 
           // }
 
