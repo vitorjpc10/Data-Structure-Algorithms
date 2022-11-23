@@ -27,10 +27,6 @@ class Solution:
                
           while len(stack) !=0:
                name1Destack += stack.pop()
-               
-               
-          print(name1Destack)
-          
           
           return name1Destack == name2
      
@@ -49,5 +45,6 @@ class Solution:
           
 
 obj = Solution()
+print(obj.isAnagram("catt", "tact"))
 print(obj.isAnagram2("catt", "tact"))
 
