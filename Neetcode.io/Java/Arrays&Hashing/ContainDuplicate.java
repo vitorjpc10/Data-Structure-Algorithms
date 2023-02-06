@@ -4,16 +4,23 @@ import java.util.Set;
 
 public class ContainDuplicate {
 
-     public static boolean containDuplicate(int[] num) {
+     public boolean containsDuplicate(int[] nums) {
+          // Create a HashSet to store the elements in the array
+          Set<Integer> set = new HashSet<>();
 
-          Set<Integer> set = new HashSet<Integer>();
-
-          for (Integer integer : num) {
-
-               set.add(Integer.valueOf(integer));
+          // Iterate through each element in the array
+          for (int num : nums) {
+               // Check if the set already contains the current element
+               if (set.contains(num)) {
+                    // If it does, it means that the element has appeared at least twice in the
+                    // array, so return true
+                    return true;
+               }
+               // If not, add the element to the set
+               set.add(num);
           }
-
-          return !(set.size() == (num.length));
+          // If all elements in the array are distinct, return false
+          return false;
      }
 
      public static boolean containDuplicate2(int[] num) {
@@ -46,8 +53,8 @@ public class ContainDuplicate {
           int[] num1 = { 1, 2, 3, 4 };
           int[] num2 = { 2, 1, 3, 4, 5, 1 };
 
-          System.out.println(containDuplicate(num1));
-          System.out.println(containDuplicate(num2));
+          System.out.println(containsDuplicate(num1));
+          System.out.println(containsDuplicate(num2));
 
           System.out.println(containDuplicate2(num1));
           System.out.println(containDuplicate2(num2));
