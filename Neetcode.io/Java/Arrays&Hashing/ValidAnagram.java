@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class ValidAnagram {
 
      public static boolean isAnagram1(String arg1, String arg2) throws Exception {
@@ -65,6 +67,22 @@ public class ValidAnagram {
 
      }
 
+     public static boolean isAnagram3(String s, String t) {
+          // If the lengths of the strings are not equal, they cannot be anagrams
+          if (s.length() != t.length()) {
+              return false;
+          }
+          
+          // Sort both strings
+          char[] sChars = s.toCharArray();
+          char[] tChars = t.toCharArray();
+          Arrays.sort(sChars);
+          Arrays.sort(tChars);
+          
+          // Compare the sorted strings, if they are not equal, the strings are not anagrams
+          return Arrays.equals(sChars, tChars);
+      }
+
      public static void main(String[] args) throws Exception {
 
           System.out.println("1a: " + isAnagram1("cat", "rat"));
@@ -72,6 +90,9 @@ public class ValidAnagram {
 
           System.out.println("1b: " + isAnagram2("cat", "rat"));
           System.out.println("2b: " + isAnagram2("anagram", "nagaram"));
+
+          System.out.println("3b: " + isAnagram3("cat", "rat"));
+          System.out.println("3b: " + isAnagram3("anagram", "nagaram"));
 
      }
 
