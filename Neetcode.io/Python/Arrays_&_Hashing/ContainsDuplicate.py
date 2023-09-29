@@ -15,8 +15,7 @@ class Solution(object):
        # Check if the length of the list is equal to the length of the set
        # If they are not equal, it means there are duplicate elements in the list
        return len(nums) != len(nums_set)
-        
-    
+
     def containsDuplicateDictionary(self, nums):
         """
         :type nums: List[int]
