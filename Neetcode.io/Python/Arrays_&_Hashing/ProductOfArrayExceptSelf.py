@@ -71,6 +71,17 @@ class Solution(object):
            - Update the `postfix` value by multiplying it with the current element.
         4. Return the `result` array.
 
+        For ones, who did not understand how prefix-postfix works, lets change 1, 2, 3, 4 positions to symbols like a, b, c, d, so multiplying will be:
+        prefix:
+        ->
+        |       a       |   a*b   | a*b*c | a*b*c*d |
+        postfix:
+        <-
+        | a*b*c*d | b*c*d |   c*d   |      d        |
+
+        The result is a multiply without the symbol in own position (the left value from prefix and the right one from postfix):
+        |    b*c*d  | a*c*d | a*b*d |   a*b*c   |
+
         Time complexity: O(n)
         Space complexity: O(n)
         """
