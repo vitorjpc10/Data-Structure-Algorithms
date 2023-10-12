@@ -60,6 +60,14 @@ class Solution(object):
             tokens = ["2", "1", "+", "3", "*"]
             result = evalRPN(tokens)
             print(result)  # Output: 9
+
+        Complexity Analysis:
+        Time complexity: O(n), where n is the number of tokens in the expression.
+            The algorithm iterates through each token in the expression once.
+
+        Space complexity: O(n), where n is the number of tokens in the expression.
+            The algorithm uses a stack to store the numbers, which can grow up to the size of the expression.
+            Additionally, the algorithm uses some extra space to store the intermediate results during evaluation.
         """
 
         # Create an empty stack to store the numbers
