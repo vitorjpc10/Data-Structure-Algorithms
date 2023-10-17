@@ -77,7 +77,7 @@ class Solution(object):
         result = [0] * len(temperatures)  # Initialize a list to store the result
 
         for i in range(len(temperatures)):
-            while stack and temperatures[i] > temperatures[stack[-1]]:
+            while stack and temperatures[stack[-1]] < temperatures[i]:  # If a cooler temperature is found
                 index = stack.pop()  # Get the index of the previous temperature
                 result[index] = i - index  # Calculate the number of days until a warmer temperature
 
